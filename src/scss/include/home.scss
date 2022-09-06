@@ -112,4 +112,50 @@
       text-align: center;
     }
   }
+
+  // Shapes
+  &__shape {
+    &__small,
+    &__big-1,
+    &__big-2 {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+    }
+
+    &__small {
+      size: 150px;
+      background: var(--first-color);
+
+      top: -2.5rem;
+      left: -1.5rem;
+    }
+
+    &__big {
+      &-1, &-2 {
+        size: 250px;
+      }
+
+      &-1 {
+        background: var(--first-color);
+        top: 16rem;
+        right: -6.5rem;
+      }
+
+      &-2 {
+        background: var(--second-color);
+        left: -3.5rem;
+        bottom: -4rem;
+      }
+    }
+
+    &__bg {
+      size: 100%;
+      object-fit: cover;
+      mix-blend-mode: soft-light;
+      opacity: .3;
+
+      @include position (absolute, $t: 0, $l: 0);
+    }
+  }
 }
