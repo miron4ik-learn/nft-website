@@ -56,7 +56,8 @@
       justify-self: center;
 
       img {
-        filter: drop-shadow(0 4px 32px hsla(203, 71%, 60%, .5))
+        filter: drop-shadow(0 4px 32px hsla(203, 71%, 60%, .5));
+        animation: float-eth 4s ease-in-out infinite;
       }
     }
 
@@ -157,5 +158,23 @@
 
       @include position (absolute, $t: 0, $l: 0);
     }
+  }
+}
+
+
+
+// Animation ethereum
+
+@keyframes float-eth {
+  0% {
+    transform: translateY(.5rem);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+
+  100% {
+    transform: translateY(.5rem);
   }
 }
