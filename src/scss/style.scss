@@ -1,0 +1,53 @@
+// Utils vars
+@import './utils/vars';
+
+// Utils functions
+@import './utils/functions';
+
+// Utils mixins
+@import './utils/mixins/media';
+@import './utils/mixins/mixins';
+@import './utils/mixins/flexbox';
+
+// Fonts
+@import './fonts';
+
+// CSS variables
+:root {
+  --header-height: 3.5rem;
+
+  // Colors
+  // Color mode HSL(hue, saturation, lightness)
+  --first-color: hsl(203, 71%, 60%);
+  --second-color: hsl(277, 56%, 68%);
+  --text-color: hsl(203, 8%, 98%);
+  --text-color-light: hsl(203, 8%, 80%);
+  --body-color: hsl(259, 20%, 18%);
+
+  // Font and typography
+  // .5rem = 8px | 1rem = 16px
+  --body-font: 'Oxanium', cursive;
+  --h2-font-size: 1.25rem;
+  --biggest-font-size: 2.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+
+  // Font weight
+  --font-semi-bold: 600;
+}
+
+// Responsive typography
+@media screen and (min-width: 1024px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+// Pre-CSS
+@import './pre';
+
+// Reusuable CSS
+@import './reusuable';
