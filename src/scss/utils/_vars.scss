@@ -6,5 +6,9 @@ $z-indexes: (
 
 // Breakpoints
 $breakpoints: (
-  //
+  'small': 340px,
+  'medium': 767px,
+  'large': 1024px,
+  'laptop': 1048px,
+  'desktop': 1500px,
 );

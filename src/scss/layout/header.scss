@@ -36,7 +36,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-
     text-align: center;
   }
 
@@ -81,7 +80,7 @@
 
 // Nav Media
 
-@include max-width (767px, $media-type: screen) {
+@include max-width ('medium', $media-type: screen) {
   .nav {
     &__menu {
       width: 100%;
@@ -97,6 +96,23 @@
       &--show {
         top: 0;
       }
+    }
+  }
+}
+
+@include min-width ('medium', $media-type: screen) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+
+    &__open,
+    &__close,
+    &__img {
+      display: none;
+    }
+
+    &__list {
+      flex-direction: row;
+      column-gap: 4rem;
     }
   }
 }
