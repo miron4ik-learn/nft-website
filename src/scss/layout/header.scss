@@ -5,6 +5,12 @@
   transition: background .3s;
 
   @include position (fixed, $t: 0, $l: 0, $z: z('fixed'));
+
+  // Change BG Header
+  &--scroll {
+    background: var(--body-color);
+    box-shadow: 0 2px 4px hsla(203, 71%, 15%, .5);
+  }
 }
 
 
